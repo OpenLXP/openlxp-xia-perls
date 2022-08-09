@@ -11,8 +11,6 @@ services:
     env_file:
       - ./.env
     command: ["npm", "start"]
-    volumes:
-      - C:/Users/kjijo/Documents/dockerRun/cacert.pem:/etc/ssl/certs/ca-certificates.pem
     networks:
       - openlxp
 
