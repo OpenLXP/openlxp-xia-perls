@@ -1,0 +1,49 @@
+{
+  "name": "perls-xia",
+  "version": "1.0.1",
+  "description": "eXperience Agent for PERLS",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "NODE_PATH=./dist node dist/index.js",
+    "build": "./node_modules/.bin/tsc -p .",
+    "debug_docker": "docker compose -f docker-compose.debug.yml up -d --build",
+    "watch": "cp -R ./src/schema ./dist/ && tsc -w -p .",
+    "debug": "nodemon --watch ./dist --inspect-brk=0.0.0.0:9229 --nolazy ./dist/index.js",
+    "test": "mocha",
+    "code-coverage": "nyc --reporter=text mocha"
+  },
+  "keywords": [
+    "xia",
+    "perls",
+    "agent",
+    "indexing",
+    "experience"
+  ],
+  "author": "Float LLC",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/chai": "^4.2.22",
+    "@types/md5": "^2.3.1",
+    "@types/mocha": "^9.0.0",
+    "@types/node": "^16.11.19",
+    "@typescript-eslint/eslint-plugin": "^5.3.1",
+    "@typescript-eslint/parser": "^5.3.1",
+    "assert": "^2.0.0",
+    "chai": "^4.3.4",
+    "eslint": "^7.32.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.1.1",
+    "mocha": "^9.1.3",
+    "nodemon": "^2.0.13",
+    "nyc": "^15.1.0",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.4.3"
+  },
+  "dependencies": {
+    "axios": "^0.22.0",
+    "jsonschema": "^1.4.0",
+    "md5": "^2.3.0"
+  }
+}
