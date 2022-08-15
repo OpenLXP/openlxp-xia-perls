@@ -1,162 +1,123 @@
 {
-  "$schema": "http://json-schema.org/draft-04/schema#",
-  "type": "object",
-  "required": [
-    "unique_record_identifier",
-    "metadata_hash",
-    "metadata_key",
-    "metadata_key_hash",
-    "provider_name",
-    "metadata"
-  ],
-  "properties": {
-    "unique_record_identifier": {
-      "type": "string"
-    },
-    "metadata_hash": {
-      "type": "string"
-    },
-    "metadata_key": {
-      "type": "string"
-    },
-    "metadata_key_hash": {
-      "type": "string"
-    },
-    "provider_name": {
-      "type": "string"
-    },
-    "metadata": {
-      "type": "object",
-      "required": [
-        "Course"
-      ],
-      "properties": {
-        "Course": {
-          "type": "object",
-          "properties": {
-            "CourseProviderName": {
-              "type": "string"
-            },
-            "DepartmentName": {
-              "type": "string"
-            },
-            "CourseCode": {
-              "type": "string"
-            },
-            "CourseTitle": {
-              "type": "string"
-            },
-            "CourseShortDescription": {
-              "type": "string"
-            },
-            "CourseFullDescription": {
-              "type": "string"
-            },
-            "CoursePrerequisites": {
-              "type": "string"
-            },
-            "CourseAdditionalInformation": {
-              "type": "string"
-            },
-            "CourseURL": {
-              "type": "string"
-            },
-            "CourseLevel": {
-              "type": "string"
-            },
-            "CourseSubjectMatter": {
-              "type": "string"
-            },
-            "EstimatedCompletionTime": {
-              "type": "string"
-            },
-            "CourseAudience": {
-              "type": "string"
-            },
-            "AccreditedBy": {
-              "type": "string"
-            }
-          }
-        },
-        "Course_Instance": {
-          "type": "object",
-          "properties": {
-            "CourseCode": {
-              "type": "string"
-            },
-            "CourseTitle": {
-              "type": "string"
-            },
-            "Thumbnail": {
-              "type": "string"
-            },
-            "CourseShortDescription": {
-              "type": "string"
-            },
-            "CourseFullDescription": {
-              "type": "string"
-            },
-            "CourseURL": {
-              "type": "string"
-            },
-            "StartDate": {
-              "type": "string"
-            },
-            "EndDate": {
-              "type": "string"
-            },
-            "EnrollmentStartDate": {
-              "type": "string"
-            },
-            "EnrollmentEndDate": {
-              "type": "string"
-            },
-            "DeliveryMode": {
-              "type": "string"
-            },
-            "InLanguage": {
-              "type": "string"
-            },
-            "Instructor": {
-              "type": "string"
-            },
-            "Duration": {
-              "type": "string"
-            },
-            "CourseLearningOutcome": {
-              "type": "string"
-            },
-            "CourseLevel": {
-              "type": "string"
-            },
-            "InstructorBio": {
-              "type": "string"
-            }
-          }
-        },
-        "Technical_Information": {
-          "type": "object",
-          "properties": {
-            "Thumbnail": {
-              "type": "string"
-            },
-            "Location": {
-              "type": "string"
-            }
-          }
-        },
-        "Lifecycle_Information": {
-          "type": "object",
-          "properties": {
-            "Provider": {
-              "type": "string"
-            },
-            "Maintainer": {
-              "type": "string"
-            }
-          }
-        }
-      }
-    }
-  }
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"type": "object",
+	"required": [
+		"unique_record_identifier",
+		"metadata_hash",
+		"metadata_key",
+		"metadata_key_hash",
+		"provider_name",
+		"metadata"
+	],
+	"properties": {
+		"unique_record_identifier": {
+			"type": "string"
+		},
+		"metadata_hash": {
+			"type": "string"
+		},
+		"metadata_key": {
+			"type": "string"
+		},
+		"metadata_key_hash": {
+			"type": "string"
+		},
+		"provider_name": {
+			"type": "string"
+		},
+		"metadata": {
+			"type": "object",
+			"required": [
+				"Course"
+			],
+			"properties": {
+				"Course": {
+					"type": "object",
+					"properties": {
+						"CourseProviderName": {
+							"type": "string"
+						},
+						"CourseCode": {
+							"type": "string"
+						},
+						"title": {
+							"type": "string"
+						},
+						"description": {
+							"type": "string"
+						},
+						"keywords": {
+							"type": "string"
+						},
+						"subject": {
+							"type": "string"
+						},
+						"audience": {
+							"type": "string"
+						},
+						"geographic coverage": {
+							"type": "string"
+						},
+						"scope": {
+							"type": "string"
+						},
+						"learning object type": {
+							"type": "string"
+						},
+						"conveys concept": {
+							"type": "string"
+						},
+						"teaches": {
+							"type": "string"
+						},
+						"assesses": {
+							"type": "string"
+						},
+						"performance data type": {
+							"type": "string"
+						},
+						"in language": {
+							"type": "string"
+						},
+						"language code": {
+							"type": "string"
+						},
+						"start date": {
+							"type": "string"
+						},
+						"end date": {
+							"type": "string"
+						},
+						"duration mins": {
+							"type": "string"
+						},
+						"duration hours": {
+							"type": "string"
+						},
+						"duration days": {
+							"type": "string"
+						},
+						"duration weeks": {
+							"type": "string"
+						},
+						"delivery mode": {
+							"type": "string"
+						},
+						"version": {
+							"type": "string"
+						},
+						"developer": {
+							"type": "string"
+						},
+						"course URL": {
+							"type": "string"
+						},
+						"thumbnail": {
+							"type": "string"
+						}
+					}
+				}
+			}
+		}
+	}
 }
