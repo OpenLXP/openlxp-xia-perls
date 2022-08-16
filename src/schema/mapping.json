@@ -7,41 +7,25 @@
   },
   "metadata.Course.title": "attributes.title",
   "metadata.Course.description": "attributes.field_description.value",
-  "metadata.Course.audience": {
-    "type": "static",
-    "value": "General Public"
-  },
-  "metadata.Course.subject": {
-    "type": "static",
-    "value": "Tactical Field Care"
-  },
   "metadata.Course.CourseProviderName": {
     "type": "env",
     "key": "PROVIDER"
   },
-  "metadata.Course.course URL": {
+  "metadata.Course.courseURL": {
 		"type": "uri",
 		"uri": "attributes.drupal_internal__nid",
 		"path": "/node/"
 	},
-  "metadata.Course.start date": "attributes.created",
-	"metadata.Course.end date": {
-    "type": "static",
-		"value": "2100-01-01T00:00:00-05:00"
-	},
+  "metadata.Course.startDate": "attributes.created",
   "metadata.Course.thumbnail": {
     "type": "uri",
     "uri": "relationships.field_media_image.data.relationships.field_media_image.data.attributes.uri.url"
   },
-  "metadata.Course.delivery mode": {
+  "metadata.Course.deliveryMode": {
     "type": "static",
     "value": "online"
   },
-  "metadata.Course.language code": "attributes.langcode",
-  "metadata.Course.geographic coverage": {
-    "type": "static",
-    "value": "online"
-  },
+  "metadata.Course.languageCode": "attributes.langcode",
   "provider_name": {
     "type": "env",
     "key": "PROVIDER"
